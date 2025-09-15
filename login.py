@@ -11,7 +11,7 @@ import streamlit as st
 import authlib
 IMAGE_ADDRESS = "concussion.jpeg"
 if not st.user.is_logged_in:
-  st.title("Google Login")
+  st.title("Welcome to the Concussion Detection App! ")
   st.image(IMAGE_ADDRESS)
   if st.sidebar.button("Log in with Google", type="primary", icon=":material/login:"):
         st.login()
