@@ -8,7 +8,7 @@ if not st.user.is_logged_in:
     st.error("Please log in to access the App")
     st.stop()
 
-MODEL_NAME = "balanced_MLP_best_model"
+MODEL_NAME = "mlp_best_model"
 
 @st.cache_resource
 def load_model(model_name):
